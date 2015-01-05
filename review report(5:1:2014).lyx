@@ -1,0 +1,455 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Abstract
+There are different classes of nonlocal correlations and we derive criteria
+ for all of these nonlocal correlations.
+ We also focus on understanding nonlocal correlations in multipartite systems
+ and provide unambiguous definitions for genuine multipartite nonlocal correlati
+ons for each of the classes.
+ This is important in our attempt to study the boundary of quantum and classical
+ mechanics.
+ We apply our criteria to multipartite mesoscopic systems such as the continuous
+-variable quantum optical system and quantum optomechanical system.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Quantum mechanics allows for nonlocal correlations that cannot be explained
+ using pre-determined agreement (that is given by local variables).
+ In order to confirm the existence of these nonlocal correlations, criteria
+ can be derived such that violation of them implies these nonlocal correlations.
+ The most famous criterion in terms of inequality is the Bell's inequality
+ that shows disagreement between quantum mechanics and local realism.
+ In reality (experiments, that is), any correlations manifest themselves
+ in the statistics of the measurement outcomes of some quantities.
+ In the next section, we show that different explanations of the statistics
+ give us different classes of nonlocal correlations.
+ The different definitions of nonlocal correlations can be generalized to
+ multipartite systems.
+ Based on the definitions of these nonlocal correlations, we derive criteria
+ that allow us to check for all these correlations in terms of the statistics
+ of quantities from the measurement outcomes in experiments.
+\end_layout
+
+\begin_layout Subsection
+Quick review on different classes of nonlocal correlations
+\end_layout
+
+\begin_layout Standard
+The notion of quantum entanglement has been suggested by Schrodinger
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+ during the early days where quantum mechanics is conceived.
+ To make clear the concepts of nonlocal correlations, we consider bipartite
+ systems.
+ We say that two parties are entangled if and only if the state of the total
+ system cannot be expressed as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather}
+\rho=\sum_{i}\eta_{i}\rho_{Q,1}^{(i)}\rho_{Q,2}^{(i)}
+\end{gather}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\rho_{Q,j}^{(i)}$
+\end_inset
+
+ is the describes the state of party j and the subscript Q denotes the state
+ as a quantum state.
+ Hence, two parties are not entangled if the total state can be expressed
+ as the product state of the states of each party.
+ Since we want to study these nonlocal correlations in terms of statistics,
+ we provide here an equivalent definition of quantum entanglement in terms
+ of probabilities.
+ We say that two parties share quantum entanglement if and only if the statistic
+s of some measurement outcomes cannot be expressed as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+P(a,b|A,B) & =\sum_{i}\lambda_{i}P_{Q}(a|A,\lambda)P_{Q}(b|B,\lambda)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $P(a,b|A,B)$
+\end_inset
+
+ is the joint probability of getting outcomes 
+\begin_inset Formula $a,b$
+\end_inset
+
+ given the measurements of 
+\begin_inset Formula $A,B$
+\end_inset
+
+ , 
+\begin_inset Formula $P_{Q}(a|A,\lambda)$
+\end_inset
+
+ is the probability of getting 
+\begin_inset Formula $a$
+\end_inset
+
+ when 
+\begin_inset Formula $A$
+\end_inset
+
+ is measured that is allowed by quantum mechanics and 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ is a set of local variables that is our explanation for the observed correlatio
+ns in the statistics.
+ 
+\end_layout
+
+\begin_layout Standard
+This is by no means the only way to explain the correlations that we see
+ in the statistics of measurement outcomes.
+ Indeed, the observed statistics could have the following explanation: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+P(a,b|A,B) & =\sum_{i}\lambda_{i}P(a|A,\lambda)P(b|B,\lambda)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $P(a|A,\lambda)$
+\end_inset
+
+ is probability of getting 
+\begin_inset Formula $a$
+\end_inset
+
+ when 
+\begin_inset Formula $A$
+\end_inset
+
+ is measured that satisfies the properties of probability.
+ This constitutes another class of nonlocal correlation and the system is
+ said to have Bell nonlocal correlations if the observed statistics cannot
+ be expressed as the above form.
+ In fact, the above definition is used by Bell to derive his important Bell's
+ inequality.
+\end_layout
+
+\begin_layout Standard
+There is also an intermediate class of nonlocal correlations that is named
+ the EPR steering where the observed statistics cannot be expressed as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+P(a,b|A,B) & =\sum_{i}\lambda_{i}P_{Q}(a|A,\lambda)P(b|B,\lambda)
+\end{flalign}
+
+\end_inset
+
+.
+ EPR steering is important in the field of quantum information where the
+ notion of trust is considered.
+\end_layout
+
+\begin_layout Subsection
+Genuine multipartite nonlocal correlations
+\end_layout
+
+\begin_layout Subsubsection
+Tripartite quantum entanglement
+\end_layout
+
+\begin_layout Standard
+With the definition of nonlocal correlations in place, we want to explore
+ the concept of multipartite nonlocal correlations.
+ We first consider the idea of multipartite quantum entanglement.
+ Again, for simplicity, we consider the meaning of tripartite quantum entangleme
+nt.
+ A straightforward extension of our definition of quantum entanglement to
+ tripartite system is that a tripartite state is quantum entangled if and
+ only if it cannot be described as product state of each parties, i.e.
+ it cannot be written as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather}
+\rho=\sum_{i}\eta_{i}\rho_{Q,1}^{(i)}\rho_{Q,2}^{(i)}\rho_{Q,3}^{(i)}
+\end{gather}
+
+\end_inset
+
+ A trivial example shows that this definition is not adequate.
+ Consider the state 
+\begin_inset Formula $\rho=\rho_{Q,1}\rho_{Q,23}$
+\end_inset
+
+ where 
+\begin_inset Formula $\rho_{Q,23}$
+\end_inset
+
+ denotes a bipartitie entangled state for subsystem 2 and 3.
+ This state clearly cannot be written as equation (5) and hence should be
+ considered a tripartite quantum entangled state according to the definition.
+ However, it is really a product state of party 1 and bipartite entangled
+ state of parties 2 and 3.
+ What we really want is quantum entanglement that is being shared among
+ all three parties, i.e.
+ entanglement that cannot be described with fewer parties.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Full tripartite inseparability
+\end_layout
+
+\begin_layout Standard
+van Loock and Furusawa define the notion of full tripartite inseparability
+ where the state of the system cannot be expressed as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather}
+\rho=\sum_{i}\eta_{i}\rho_{Q,k}^{(i)}\rho_{Q,lm}^{(i)}
+\end{gather}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $k=1,2,3$
+\end_inset
+
+ .
+ This means that the state of the system cannot be expressed product state
+ 
+\begin_inset Formula $\rho=\sum_{i}\eta_{i}\rho_{Q,1}^{(i)}\rho_{Q,23}^{(i)}$
+\end_inset
+
+ , 
+\begin_inset Formula $\rho=\sum_{i}\eta_{i}\rho_{Q,2}^{(i)}\rho_{Q,13}^{(i)}$
+\end_inset
+
+ or 
+\begin_inset Formula $\rho=\sum_{i}\eta_{i}\rho_{Q,3}^{(i)}\rho_{Q,12}^{(i)}$
+\end_inset
+
+ .
+ They then use this definition to derive criteria that check for full tripartite
+ inseparability.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename review report/groupfig1.eps
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Full tripartite inseparability negates that the state of the system is in
+ any of the above bipartitions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Genuine tripartite entanglement
+\end_layout
+
+\begin_layout Standard
+A state is said to be genuinely tripartite entangled if and only if it cannot
+ be described as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather}
+\rho=P_{1}\sum_{i}\eta_{i}\rho_{1}\rho_{23}+P_{2}\sum_{i'}\eta_{i'}\rho_{2}\rho_{13}+P_{3}\sum_{i''}\eta_{i''}\rho_{3}\rho_{12}
+\end{gather}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means that to detect genuine tripartite entanglement, we need to negate
+ that the state of the system is in any of the bipartitions 
+\begin_inset Formula $\rho_{1}\rho_{23},\rho_{2}\rho_{13}$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{3}\rho_{12}$
+\end_inset
+
+ or any mixture of them.
+ This definition is more general and harder to show than the full tripartite
+ inseparability as the latter excludes only each individual bipartition
+ but not mixtures of them.
+ For instance, a mixture of bipartite entangled states would show full tripartit
+e inseparability.
+ Hence, the two different definitions of tripartite quantum entanglement
+ mean different things but they have been used interchangeably in the literature.
+ Note that genuine tripartite entanglement and full tripartite inseparability
+ coincide for pure quantum states but not for mixed states.
+ 
+\end_layout
+
+\begin_layout Standard
+This definition of genuine tripartite quantum entanglement can be easily
+ generalized to N-partite systems and also for other classes of nonlocal
+ correlations.
+\end_layout
+
+\begin_layout Section
+Criteria for genuine multipartite nonlocal correlations
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Schrödinger, E., 1935b, Proc.
+ Cambridge Philos.
+ Soc.
+ 31, 555.
+\end_layout
+
+\end_body
+\end_document
